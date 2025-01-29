@@ -1,5 +1,5 @@
-<head>	
-	<!-- Meta Pixel Code -->
+<head>
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,55 +16,48 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=421765253638977&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-	<meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
-	<title>pixel test page</title>
-	</head>
-	<body>
-	<h2>pixel test page</h2>
-	<div>
-	<ul>
-	<li><button id="addToWishlistButton" type="button">Add to Wishlist</button></li>
-	<li><button id="addToCartButton" type="button">Add to Cart</button></li>
-	<li><button id="checkoutButton" type="button">Check Out</button></li>
-	<li><button id="purchaseButton" type="button">Purchase</button></li>
-	<li><button id="subcribeButton" type="button">Subscribe</button></li>
-	<li><button id="registrationButton" type="button">Registration</button></li>
-	<li><button id="unWantedEvent_button" type="button">unWantedEvent</button></li>
-	
-	</ul>
-	</div>
-	
-	<script type="text/javascript">
-	document.getElementById('addToWishlistButton').addEventListener('click', function() {
-	cbq('track', 'Contact');
-	}, false);
-	
-	document.getElementById('addToCartButton').addEventListener('click', function() {
-	cbq('track', 'CustomEvents2');
-	}, false);
-	
-	document.getElementById('checkoutButton').addEventListener('click', function() {
-	cbq('track', 'InitiateCheckout');
-	}, false);
-	
-	document.getElementById('purchaseButton').addEventListener('click', function() {
-	cbq('track', 'Purchase', {
-	value: "fsdgdfg",
-	currency: 'USD',
-	});
-	}, false);
-	
-	document.getElementById('subcribeButton').addEventListener('click', function() {
-	cbq('track', 'Subscribe');
-	}, false);
-	
-	document.getElementById('registrationButton').addEventListener('click', function() {
-	cbq('track', 'CompleteRegistration');
-	}, false);
-	
-	document.getElementById('unWantedEvent_button').addEventListener('click', function() {
-	cbq('track', 'unWantedEvent');
-	}, false);
-	
-	</script>
-	</body>
+<meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
+<title>pixel test page</title>
+</head>
+<body>
+    <h2>pixel test page</h2>
+    <div>
+    <ul>
+        <li><button id="addToWishlistButton" type="button">Add to Wishlist</button></li>
+        <li><button id="addToCartButton" type="button">Add to Cart</button></li>
+        <li><button id="checkoutButton" type="button">Check Out</button></li>
+        <li><button id="purchaseButton" type="button">Purchase</button></li>
+        <li><button id="subcribeButton" type="button">Subscribe</button></li>
+        <li><button id="registrationButton" type="button">Registration</button></li>
+    </ul>
+    </div>
+
+<script type="text/javascript">
+document.getElementById('addToWishlistButton').addEventListener('click', function() {
+  fbq('track', 'AddToWishlist');
+}, false);
+
+document.getElementById('addToCartButton').addEventListener('click', function() {
+  fbq('track', 'AddToCart');
+}, false);
+
+document.getElementById('checkoutButton').addEventListener('click', function() {
+  fbq('track', 'InitiateCheckout');
+}, false);
+
+document.getElementById('purchaseButton').addEventListener('click', function() {
+  fbq('track', 'Purchase', {
+    value: 100,
+    currency: 'USD',
+  });
+}, false);
+
+document.getElementById('subcribeButton').addEventListener('click', function() {
+  fbq('track', 'Subscribe');
+}, false);
+
+document.getElementById('registrationButton').addEventListener('click', function() {
+  fbq('track', 'CompleteRegistration');
+}, false);
+</script>
+</body>
